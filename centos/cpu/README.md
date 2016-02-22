@@ -32,7 +32,8 @@ sh caffe_install.sh
 
 3. 安装caffe的python接口
 
-sh pycaffe.sh
+- sh pycaffe.sh
+- 根据提示安装Anaconda到/usr/local/lib/
 
 ## 其他
 如果所使用的Anaconda，mkl，boost，opencv等软件版本不一致，可以对应地更改sh文件。

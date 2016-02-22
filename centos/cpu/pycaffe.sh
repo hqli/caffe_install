@@ -42,6 +42,6 @@ fi
 cd ~/caffe-master
 sudo yum install -y python-devel python-pip
 for req in $(cat python/requirements.txt); do
-        sudo pip install $req;
+        sudo /usr/local/lib/anaconda/bin/pip install $req;
 done
 make pycaffe
