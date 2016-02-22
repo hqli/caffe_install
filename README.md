@@ -3,7 +3,7 @@
 caffe在CentOS6.7上的gpu方案暂未验证。
 
 ## 使用方法
-详见ubuntu和centos文件下的README.md
+详见ubuntu和centos文件夹下的README.md
 
 ## 安装内容
 
@@ -23,6 +23,7 @@ caffe在CentOS6.7上的gpu方案暂未验证。
     - python接口的依赖
         - python-dev
         - python-pip
+
 ### centos6.7
 - caffe的依赖
     - gcc
@@ -40,7 +41,7 @@ caffe在CentOS6.7上的gpu方案暂未验证。
     - opencv（手动编译）
     - mkl(手动安装）
     - pyhton接口的依赖
-        - Anaconda
+        - Anaconda(手动安装）
         - boost(手动编译）
         - python-devel
         - python-pip
