@@ -1,0 +1,5 @@
+Caffe Installation:
+http://caffe.berkeleyvision.org/installation.html
+CUDA Installation:
+http://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html
+http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
