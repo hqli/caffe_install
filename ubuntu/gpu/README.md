@@ -41,6 +41,7 @@ sh pycaffe.sh
 
 4. 安装caffe的matlab接口
 
+前提:已经安装matlab,安装教程自行百度或谷歌  
 修改~/caffe-master文件夹下的Makefile.config  
 修改MATLAB_DIR一行  
     - 以R2014a为例,MATLAB_DIR :=/usr/local/MATLAB/R2014a  
