@@ -23,17 +23,30 @@
     - https://github.com/Itseez/opencv/archive/2.4.9.zip
 
 ## 步骤
-1. 安装Intel的mkl即parallel_studio_xe
+### 安装Intel的mkl即parallel_studio_xe
     - 默认安装到/opt下
-2. 安装Caffe
+### 安装Caffe
 sh caffe_install.sh
 
 具体请看caffe_install.sh 和caffe-master中的readme。
 
-3. 安装caffe的python接口
+### 安装caffe的python接口
 
 - sh pycaffe.sh
 - 根据提示安装Anaconda到/usr/local/lib/
 
+### 安装caffe的matlab接口
+
+前提:已经安装matlab,安装教程自行百度或谷歌
+
+- 配置
+    - 修改~/caffe-master文件夹下的Makefile.config
+    - 修改MATLAB_DIR一行
+    - 以R2014a为例,MATLAB_DIR :=/usr/local/MATLAB/R2014a
+- 编译
+    - 然后在终端,进入~/caffe-master目录,执行
+    - `make matcaffe`
+
+
 ## 其他
-如果所使用的Anaconda，mkl，boost，opencv等软件版本不一致，可以对应地更改sh文件。
+如果所使用的Anaconda，mkl，boost，opencv等软件版本不一致，需要更改sh文件中的对应内容。
