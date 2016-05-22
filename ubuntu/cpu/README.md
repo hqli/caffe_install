@@ -17,6 +17,9 @@ sudo apt-get update
 为了方便编辑文本，更新VIM
 sudo apt-get install vim
 
+### 安装Caffe依赖
+sudo sh caffe_dependence.sh
+
 ### 安装Caffe
 sh caffe_install.sh
 

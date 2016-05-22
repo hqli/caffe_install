@@ -25,14 +25,19 @@
     - https://codeload.github.com/gflags/gflags/zip/master
 - 下载cmake-3.5.0.tar.gz,放在README.md同一文件夹下
     - https://github.com/Kitware/CMake/archive/v3.5.0.zip
-## 步骤
-### 安装Intel的mkl即parallel_studio_xe
 
+## 步骤
+
+### 安装cuda
+- sh caffe_cuda_1.sh
+- reboot
+- sh caffe_cuda_2.sh
+- reboot
+
+### 安装Intel的mkl即parallel_studio_xe
 - sh caffe_mkl.sh
 - 默认安装到/opt下
 
-### 安装Caffe依赖
-sudo sh caffe_dependence.sh
 
 ### 安装Caffe
 sh caffe_install.sh
@@ -56,11 +61,11 @@ sh caffe_install.sh
     - 然后在终端,进入~/caffe-master目录,执行
     - `make matcaffe`
 
-
 ## 其他
 - 如果所使用的Anaconda，mkl，boost，opencv等软件版本不一致，需要更改sh文件中的对应内容。
-- 安装新版本的caffe后出现tools/caffe.cpp: In function ‘int main(int, char**)’:tools/caffe.cpp:394: 错误：‘’不是‘gflags’的成员
+- 安装新版本的caffe后出现tools/caffe.cpp: In function ‘int main(int, char**)':tools/caffe.cpp:394: 错误：‘’不是‘gflags’的成员
     - 这是由于caffe新版本/toots/caffe.cpp在394行增加了gflags的SetVersionString这一行，以前的gflags版本没有。
     - 手动编译gflags。
-
+- cudnn不支持计算能力低于3.0的GPU，在caffe的Makefile.config不启用cudnn。
+-  pydot的问题，应该用/opt/anaconda/bin/pip先卸载pydot，然后安装pydot2
 
