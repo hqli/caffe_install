@@ -5,6 +5,7 @@
 - 下载cuda_7.5.18_linux.run与该README.md放在同一文件夹下
     - 下载地址https://developer.nvidia.com/cuda-toolkit-archive
     - 如果下载cuda版本不一致,需要修改caffe_install_1.sh,caffe_install_2.sh,caffe_install_3.sh中对应的cuda配置
+
 ## 步骤
 1. 安装Caffe前
 ** 软件源配置
