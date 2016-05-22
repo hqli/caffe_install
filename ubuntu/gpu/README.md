@@ -4,7 +4,7 @@
 - 安装需要联网
 - 下载cuda_7.5.18_linux.run与该README.md放在同一文件夹下
     - 下载地址https://developer.nvidia.com/cuda-toolkit-archive
-
+    - 如果下载cuda版本不一致,需要修改caffe_install_1.sh,caffe_install_2.sh,caffe_install_3.sh中对应的cuda配置
 ## 步骤
 1. 安装Caffe前
 ** 软件源配置
@@ -21,16 +21,28 @@ sudo apt-get install vim
 
 
 2. 安装Caffe
-** CUDA安装
-设置BIOS为集显(UMA)，重启按Ctrl+Alt+F1进入字符界面
-sh caffe_install_1.sh
-根据提示安装驱动以及CUDA
-重启
+- ** CUDA配置
+设置BIOS为集显(UMA)，重启按Ctrl+Alt+F1进入字符界面  
+sh caffe_install_1.sh  
+重启  
 
-** caffe安装
-sh caffe_install_2.sh
-具体请看caffe_install_2.sh 和caffe-master中的readme。
+- ** CUDA安装
+sh caffe_install_2.sh  
+根据提示安装驱动以及CUDA(如果不需要opengl,不建议安装)  
+重启  
+
+- ** caffe安装
+sh caffe_install_3.sh  
+具体请看caffe_install_3.sh 和caffe-master中的readme。 
 
 3. 安装caffe的python接口
 
 sh pycaffe.sh
+
+4. 安装caffe的matlab接口
+
+修改~/caffe-master文件夹下的Makefile.config  
+修改MATLAB_DIR一行  
+    - 以R2014a为例,MATLAB_DIR :=/usr/local/MATLAB/R2014a  
+然后在终端,进入~/caffe-master目录,执行
+`make matcaffe`
