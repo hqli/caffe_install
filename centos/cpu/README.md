@@ -31,6 +31,11 @@
 - sh caffe_mkl.sh
 - 默认安装到/opt下
 
+### 安装anaconda
+- sh caffe_anaconda.sh
+- install on /opt/anaconda 
+
+
 ### 安装Caffe依赖
 sudo sh caffe_dependence.sh
 
@@ -62,5 +67,4 @@ sh caffe_install.sh
 - 安装新版本的caffe后出现tools/caffe.cpp: In function ‘int main(int, char**)’:tools/caffe.cpp:394: 错误：‘’不是‘gflags’的成员
     - 这是由于caffe新版本/toots/caffe.cpp在394行增加了gflags的SetVersionString这一行，以前的gflags版本没有。
     - 手动编译gflags。
-
 

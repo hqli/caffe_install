@@ -38,6 +38,12 @@
 - sh caffe_mkl.sh
 - 默认安装到/opt下
 
+### 安装anaconda
+- sh caffe_anaconda.sh
+- install on /opt/anaconda
+
+### 安装Caffe依赖
+sudo sh caffe_dependence.sh
 
 ### 安装Caffe
 sh caffe_install.sh
