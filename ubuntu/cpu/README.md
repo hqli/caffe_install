@@ -26,3 +26,23 @@ sh caffe_install.sh
 3. 安装caffe的python接口
 
 sh pycaffe.sh
+
+如果安装一些python软件的时候出现问题,可以使用apt-get install python-对应的包  
+以scikit-image为例  
+    - apt-cache search scikit-image
+        - 查询
+        - python-skimage - Python modules for image processing
+        - python-skimage-doc - Documentation and examples for scikit-image
+        - python-skimage-lib - Optimized low-level algorithms for scikit-image
+        - python3-skimage - Python 3 modules for image processing
+        - python3-skimage-lib - Optimized low-level algorithms for Python 3 scikit-image
+    - sudo apt-get install python-skimage
+
+4. 安装caffe的matlab接口
+
+修改~/caffe-master文件夹下的Makefile.config
+修改MATLAB_DIR一行
+    - 以R2014a为例,MATLAB_DIR :=/usr/local/MATLAB/R2014a
+然后在终端,进入~/caffe-master目录,执行
+`make matcaffe`
+
