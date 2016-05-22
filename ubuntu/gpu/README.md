@@ -39,6 +39,18 @@ sh caffe_install_3.sh
 
 sh pycaffe.sh
 
+如果安装一些python软件的时候出现问题,可以使用apt-get install python-对应的包
+以scikit-image为例
+    - apt-cache search scikit-image
+        - 查询
+        - python-skimage - Python modules for image processing
+        - python-skimage-doc - Documentation and examples for scikit-image
+        - python-skimage-lib - Optimized low-level algorithms for scikit-image
+        - python3-skimage - Python 3 modules for image processing
+        - python3-skimage-lib - Optimized low-level algorithms for Python 3 scikit-image
+    - sudo apt-get install python-skimage
+
+
 4. 安装caffe的matlab接口
 
 前提:已经安装matlab,安装教程自行百度或谷歌  
