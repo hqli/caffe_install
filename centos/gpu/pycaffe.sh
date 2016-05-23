@@ -31,7 +31,6 @@ fi
 
 #python interface
 cd ~/caffe-master
-sudo yum install -y python-devel python-pip
 for req in $(cat python/requirements.txt); do
         sudo /opt/anaconda/bin/pip install $req;
 done

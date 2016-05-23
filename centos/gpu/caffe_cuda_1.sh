@@ -1,6 +1,5 @@
 #caffe install on CentOS6.5 with GPU 
 
-sudo yum install kernel-devel kernel-headers
 
 # 在配置文件中禁用nouveau
 sudo rm /etc/modprobe.d/blacklist-nouveau.conf

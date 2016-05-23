@@ -28,32 +28,53 @@
 
 ## 步骤
 
+### 安装需要yum安装的软件
+需要联网  
+切换到root用户  
+在终端输入`sudo sh caffe_yum.sh`
+
 ### 安装cuda
-- sh caffe_cuda_1.sh
-- reboot
-- sh caffe_cuda_2.sh
-- reboot
+1. cuda配置
+切换到root用户
+在终端输入`sudo sh caffe_cuda_1.sh`
+reboot  
+
+2. cuda安装
+不进入图形界面,按ctrl+alt+F1  
+切换到root用户  
+输入`sudo sh caffe_cuda_2.sh`  
+如果出现蓝屏问题,按ctrl+alt+F1继续安装  
+如果不需要opengl不建议安装  
+重启  
 
 ### 安装Intel的mkl即parallel_studio_xe
-- sh caffe_mkl.sh
+- 切换到root用户
+- 终端输入`sudo sh caffe_mkl.sh`
 - 默认安装到/opt下
 
-### 安装anaconda
-- sh caffe_anaconda.sh
-- install on /opt/anaconda
+### 安装opencv
+- 切换到root用户
+- 终端输入`sudo sh caffe_opencv.sh`
 
 ### 安装Caffe依赖
-sudo sh caffe_dependence.sh
+- 切换到root用户
+- 终端输入`sudo sh caffe_dependence.sh`
 
 ### 安装Caffe
-sh caffe_install.sh
+- 需要联网
+- 终端输入`sh caffe_install.sh`
 
 具体请看caffe_install.sh 和caffe-master中的readme。
 
 ### 安装caffe的python接口
+1. 安装anaconda
+- 切换到root用户
+- 终端输入`sudo sh caffe_anaconda.sh`
+- 根据提示安装Anaconda到/opt/anaconda
 
-- sh pycaffe.sh
-- 根据提示安装Anaconda到/usr/local/lib/
+2. 编译caffe的python接口
+- 需要联网
+- 终端输入`sh pycaffe.sh`
 
 ### 安装caffe的matlab接口
 
