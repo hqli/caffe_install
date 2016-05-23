@@ -92,7 +92,7 @@ cd ..
 unzip gflags-master.zip
 cd gflags-master
 mkdir build && cd build
-export CXXFLAGS="-fPIC" && /usr/local/bin/cmake3.5 .. && make VERBOSE=1
+export CXXFLAGS="-fPIC" && /usr/local/bin/cmake .. && make VERBOSE=1
 make
 sudo make install
 cd ../..
