@@ -14,23 +14,12 @@
 #否则会出现一些未知错误，例如登出后无法进入桌面等
 
 #故修改自己的.bashrc添加
-#export PATH="/usr/local/lib/anaconda/bin:$PATH"
-#export PATH="/usr/local/lib/anaconda/lib:$PATH
+#export PATH="/opt/anaconda/bin:$PATH"
+#export PATH="/opt/anaconda/lib:$PATH
 #这样自己使用时，python的指向会是anaconda的python2.7.9，也可以使用anaconda的库例如skimage等
-
-anacondapath="/usr/local/lib/anaconda"
-
-if [ ! -d "$anacondapath" ]; then
-	sudo sh Anaconda-2.2.0-Linux-x86_64.sh
-	#根据提示安装，安装路径设为/opt/anaconda
-	echo "export PATH=\"/opt/anaconda/bin:\$PATH\"">>~/.bashrc
-	echo "export PATH=\"/opt/anaconda/lib:\$PATH\"">>~/.bashrc
-	source ~/.bashrc
-fi
 
 #python interface
 cd ~/caffe-master
-sudo yum install -y python-devel python-pip
 for req in $(cat python/requirements.txt); do
         sudo /opt/anaconda/bin/pip install $req;
 done

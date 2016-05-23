@@ -13,7 +13,11 @@
 #Step 7 : Complete
 
 #SKCG-8K8GKX84
-sudo yum install -y xulrunner.i686
 tar xvf parallel_studio_xe_2015_update3.tgz
 cd parallel_studio_xe_2015_update3
 sudo sh install.sh
+
+# mkl config
+sudo sh -c 'echo "/opt/intel/lib/intel64" > /etc/ld.so.conf.d/mkl.conf'
+sudo sh -c 'echo "/opt/intel/mkl/lib/intel64" >> /etc/ld.so.conf.d/mkl.conf'
+sudo ldconfig
