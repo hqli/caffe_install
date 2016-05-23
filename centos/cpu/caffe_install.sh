@@ -3,7 +3,6 @@
 #see    :   just for CPU, no CUDA
 
 #install caffe on ~
-sudo apt-get install -y wget unzip
 wget https://github.com/BVLC/caffe/archive/master.zip
 unzip master.zip
 rm master.zip
