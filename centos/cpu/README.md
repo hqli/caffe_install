@@ -55,13 +55,13 @@
 
 ### 安装caffe的python接口
 1. 安装anaconda
-- 切换到root用户
-- 终端输入`sudo sh caffe_anaconda.sh`
-- 根据提示安装Anaconda到/opt/anaconda
+    - 切换到root用户
+    - 终端输入`sudo sh caffe_anaconda.sh`
+    - 根据提示安装Anaconda到/opt/anaconda
 
 2. 编译caffe的python接口
-- 需要联网
-- 终端输入`sh pycaffe.sh`
+    - 需要联网
+    - 终端输入`sh pycaffe.sh`
 
 ### 安装caffe的matlab接口
 

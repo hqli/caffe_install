@@ -9,6 +9,8 @@
     - 保存并退出特权模式
 
 - 需要下载的软件已经放在百度云网盘上：http://pan.baidu.com/s/1qXmy4Uw
+- 下载cuda
+    - https://developer.nvidia.com/cuda-downloads
 - 下载Anaconda-2.2.0-Linux-x86_64.sh(318M)
     - Anaconda下载地址: https://www.continuum.io/downloads#_unix
 - 下载Intel的mkl即parallel_studio_xe_2015_update3.tgz(3.9G，这是以前的)放在README.md同一文件夹下
@@ -68,13 +70,12 @@ reboot
 
 ### 安装caffe的python接口
 1. 安装anaconda
-- 切换到root用户
-- 终端输入`sudo sh caffe_anaconda.sh`
-- 根据提示安装Anaconda到/opt/anaconda
-
+    - 切换到root用户
+    - 终端输入`sudo sh caffe_anaconda.sh`
+    - 根据提示安装Anaconda到/opt/anaconda
 2. 编译caffe的python接口
-- 需要联网
-- 终端输入`sh pycaffe.sh`
+    - 需要联网
+    - 终端输入`sh pycaffe.sh`
 
 ### 安装caffe的matlab接口
 
