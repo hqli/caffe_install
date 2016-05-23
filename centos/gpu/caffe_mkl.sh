@@ -13,6 +13,7 @@
 #Step 7 : Complete
 
 #SKCG-8K8GKX84
+sudo yum install -y xulrunner.i686
 tar xvf parallel_studio_xe_2015_update3.tgz
 cd parallel_studio_xe_2015_update3
 sudo sh install.sh
