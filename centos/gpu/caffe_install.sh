@@ -5,7 +5,6 @@
 
 #install caffe on ~
 
-sudo apt-get install -y wget unzip
 wget https://github.com/BVLC/caffe/archive/master.zip
 unzip master.zip -d ~/
 rm master.zip
