@@ -11,21 +11,6 @@ sudo yum install -y epel-release
 sudo yum clean all
 sudo yum makecache
 
-
-#CUDA7.5 configure
-sudo sh -c 'echo "export PATH=/usr/local/cuda-7.5/bin:\$PATH" >> /etc/profile'
-
-source /etc/profile
-
-sudo sh -c 'echo "/usr/local/cuda-7.5/lib64" > /etc/ld.so.conf.d/cuda.conf'
-#更新运行时库
-sudo ldconfig
-
-# mkl config
-sudo sh -c 'echo "/opt/intel/lib/intel64" > /etc/ld.so.conf.d/mkl.conf'
-sudo sh -c 'echo "/opt/intel/mkl/lib/intel64" >> /etc/ld.so.conf.d/mkl.conf'
-sudo ldconfig
-
 #gcc与g++
 sudo yum install -y  gcc gcc-c++ freeglut
 
