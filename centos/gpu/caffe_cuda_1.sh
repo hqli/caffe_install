@@ -1,7 +1,6 @@
 #caffe install on CentOS6.5 with GPU 
 
-#Set BIOS start only with UMA
-#ctrl+Alt+F1 
+sudo yum install kernel-devel kernel-headers
 
 # 在配置文件中禁用nouveau
 sudo rm /etc/modprobe.d/blacklist-nouveau.conf
