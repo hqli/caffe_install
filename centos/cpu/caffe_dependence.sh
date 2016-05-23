@@ -19,10 +19,7 @@ sudo ldconfig
 
 
 #gcc与g++
-sudo yum install -y  gcc
-sudo yum install -y  gcc-c++ 
-
-sudo yum install -y freeglut
+sudo yum install -y  gcc gcc-c++ freeglut
 
 #General dependencies
 sudo yum install -y protobuf-devel leveldb-devel snappy-devel opencv-devel  hdf5-devel
