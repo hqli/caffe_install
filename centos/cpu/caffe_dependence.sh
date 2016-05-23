@@ -32,7 +32,7 @@ cd boost_1_59_0
 sudo ./b2 install
 # boost需要添加python支持
 sudo ./b2 --with-python install
-sudo echo "/usr/local/lib" >> /etc/ld.so.conf
+sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/boost.sh'
 sudo ldconfig
 cd ..
 
