@@ -13,10 +13,11 @@ sudo yum makecache
 
 
 #CUDA7.5 configure
-sudo echo "export PATH=/usr/local/cuda-7.5/bin:\$PATH">>/etc/profile
+sudo sh -c 'echo "export PATH=/usr/local/cuda-7.5/bin:\$PATH" >> /etc/profile'
+
 source /etc/profile
-sudo rm /etc/ld.so.conf.d/cuda.conf
-sudo echo "/usr/local/cuda-7.5/lib64">>/etc/ld.so.conf.d/cuda.conf
+
+sudo sh -c 'echo "/usr/local/cuda-7.5/lib64" > /etc/ld.so.conf.d/cuda.conf'
 #更新运行时库
 sudo ldconfig
 
@@ -41,7 +42,7 @@ sudo ./b2 install
 sudo ./b2 --with-python install
 cd ..
 # boost config
-sudo echo "/usr/local/lib" >> /etc/ld.so.conf.d/boost.conf
+sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/boost.conf'
 sudo ldconfig
 
 #Remaining dependencies, recent OS
