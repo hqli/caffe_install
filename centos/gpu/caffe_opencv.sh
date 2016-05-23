@@ -7,9 +7,6 @@
 
 unzip opencv-2.4.9.zip
 cd opencv-2.4.9
-# opencv config
-sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
-sudo ldconfig
 
 cmake --version | grep " 2.6"
 if [ $? -eq 0 ]; then
@@ -23,3 +20,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local  ..
 make -j 4
 sudo make install
 cd ../..
+
+# opencv config
+sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
+sudo ldconfig
