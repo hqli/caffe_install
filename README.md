@@ -1,6 +1,5 @@
 # caffe自动安装脚本
 [caffe](http://caffe.berkeleyvision.org/)在Ubuntu14.04和CentOS6.7上的自动安装脚本,包含仅cpu和gpu两种方案。
-caffe在CentOS6.7上的gpu方案暂未验证。
 
 ## 使用方法
 详见ubuntu和centos文件夹下的README.md
