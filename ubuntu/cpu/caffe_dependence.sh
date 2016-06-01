@@ -14,4 +14,5 @@ sudo apt-get install -y libatlas-base-dev
 #Remaining dependencies
 sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 sudo apt-get install -y wget unzip
-
+# python scipy dependencies
+sudo apt-get install -y gfortran

@@ -1,5 +1,5 @@
 # caffe自动安装脚本
-[caffe](http://caffe.berkeleyvision.org/)在Ubuntu14.04和CentOS6.7上的自动安装脚本,包含仅cpu和gpu两种方案。
+[caffe](http://caffe.berkeleyvision.org/)在Ubuntu14.04和CentOS6.7上的自动安装脚本,包含cpu和gpu两种方案。
 
 ## 使用方法
 详见ubuntu和centos文件夹下的README.md
@@ -22,6 +22,7 @@
     - python接口的依赖
         - python-dev
         - python-pip
+    - CUDA7.5
 
 ### centos6.7
 - caffe的依赖
@@ -44,6 +45,7 @@
         - boost(手动编译）
         - python-devel
         - python-pip
+    - CUDA7.5
 
 ## 安装后
 - caffe安装在～/caffe-master文件夹下
