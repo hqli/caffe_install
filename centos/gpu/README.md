@@ -49,10 +49,16 @@ reboot
 如果不需要opengl不建议安装  
 重启  
 
-### 安装Intel的mkl即parallel_studio_xe
+### BLAS
+
+#### 方案1. 安装Intel的mkl即parallel_studio_xe(默认)
 - 切换到root用户
 - 终端输入`sudo sh caffe_mkl.sh`
 - 默认安装到/opt下
+
+#### 方案2. atlas
+- 需要安装yum -y install blas blas-devel atlas atlas-devel atlas-sse3 atlas-sse3-devel lapack lapack-devel
+- 编译caffe时修改caffe-master/Makefile.config中的BLAS_LIB:=/usr/lib64/atlas
 
 ### 安装opencv
 - 切换到root用户

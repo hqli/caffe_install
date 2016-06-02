@@ -4,6 +4,11 @@
 ## 使用方法
 详见ubuntu和centos文件夹下的README.md
 
+
+## 更新日志
+
+- 增加了centos安装caffe的atlas方法
+
 ## 安装内容
 
 ### ubutnu14.04
