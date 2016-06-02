@@ -26,3 +26,5 @@ sudo yum install -y gflags-devel glog-devel lmdb-devel
 # python
 sudo yum install -y python-devel python-pip
 
+# blas with ablas (recommand mkl)
+# yum -y install blas blas-devel atlas atlas-devel atlas-sse3 atlas-sse3-devel lapack lapack-devel
