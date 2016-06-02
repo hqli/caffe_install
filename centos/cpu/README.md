@@ -48,6 +48,7 @@
 - 终端输入`sudo sh caffe_dependence.sh`
 
 ### 安装Caffe
+- 切换到使用caffe的用户
 - 需要联网
 - 终端输入`sh caffe_install.sh`
 
@@ -55,11 +56,12 @@
 
 ### 安装caffe的python接口
 1. 安装anaconda
-    - 切换到root用户
-    - 终端输入`sudo sh caffe_anaconda.sh`
+    - 切换到使用caffe的用户
+    - 终端输入sh caffe_anaconda.sh`
     - 根据提示安装Anaconda到/opt/anaconda
 
 2. 编译caffe的python接口
+    - 切换到使用caffe的用户
     - 需要联网
     - 终端输入`sh pycaffe.sh`
 
